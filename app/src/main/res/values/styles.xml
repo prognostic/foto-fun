@@ -5,4 +5,37 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="FunMeActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/FunMeActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/FunMeActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/FunMeActionBar</item>
+        <item name="actionBarTabTextStyle">@style/FunMeActionBarTabText</item>
+        <item name="actionMenuTextColor">@color/actionbar_text</item>
+
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="FunMeActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/FunMeActionBarTitleText</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/actionbar_background</item>
+        <item name="titleTextStyle">@style/FunMeActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="FunMeActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <!-- ActionBar tabs text -->
+    <style name="FunMeActionBarTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
 </resources>
+
