@@ -1,6 +1,24 @@
 <resources>
+
     <string name="app_name">Fun me in</string>
+
     <string name="read_how_to">Прочитай как делать фотки одним движением</string>
     <string name="go_to_tutorial">прочитать инструкцию ></string>
+    <string name="how_to_make_a_fan">Как сделать ФАН</string>
+    <string name="I_know_how_to_do_a_fan">Я умею делать ФАН</string>
+    <string name="do_not_show_this_screen">больше не показывать этот экран</string>
+    <string name="make_fan">Сделать ФАН</string>
+
+    <string name="tutorial_step_one">--- Шаг 1 ---</string>
+    <string name="tutorial_step_two">--- Шаг 2 ---</string>
+    <string name="tutorial_step_three">--- Шаг 3 ---</string>
+    <string name="tutorial_step_four">--- Шаг 4 ---</string>
+
+    <string name="tutorial_text_step_one">Выберите понравившийся Вам ФАН из меню, расположенного в нижней части экрана. В меню \"Фаны\" Вы также можете изменить категорию фанов, отображающихся на главном экране.</string>
+    <string name="tutorial_text_step_two">Нажмите на кнопку \"Фан\" и при помощи жестов настройте положение ФАНа - нажмите на экран и перемещайте палец для перемещения изображения, дважды нажмите на экран и перемещайте палец для увеличения/уменьшения ФАНа, нажмите двумя пальцами для поворота. Нажмите на кнопку \"Камера\" для настройки увеличения камеры.</string>
+    <string name="tutorial_text_step_three">Наведите камеру на друга, нажмите \"Готово\", для создания ФАНа. Воспользуйтесь одной из кнопок социальных сетей, или выберете способ из списка \"Поделиться\".</string>
+    <string name="tutorial_text_step_four">Сделайте больше ФАНов!</string>
+
     <string name="action_settings">Настройки</string>
+
 </resources>

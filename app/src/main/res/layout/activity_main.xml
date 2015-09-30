@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/read_how_to"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:gravity="center"
@@ -28,7 +28,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:textColor="#0BBDB0" />
+        android:textColor="#0BBDB0"
+        android:onClick="goToTutorial" />
 
     <ImageView
         android:layout_width="160dp"
@@ -44,7 +45,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Я умею делать ФАН"
+        android:text="@string/I_know_how_to_do_a_fan"
         android:id="@+id/checkBox"
         android:layout_marginTop="12dp"
         android:checked="false"
@@ -56,16 +57,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="больше не показывать этот экран"
+        android:text="@string/do_not_show_this_screen"
         android:id="@+id/textView2"
         android:layout_below="@+id/checkBox"
         android:layout_centerHorizontal="true"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="160dp"
         android:layout_height="32dp"
-        android:text="Сделать ФАН"
+        android:text="@string/make_fan"
         android:id="@+id/button"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
