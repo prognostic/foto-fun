@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /** Called when the user clicks the Fun button */
+    public void goAndCreateAFan(View view) {
+        Intent intent = new Intent(this, CreatingFunActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -8,6 +8,8 @@
     <string name="I_know_how_to_do_a_fan">Я умею делать ФАН</string>
     <string name="do_not_show_this_screen">больше не показывать этот экран</string>
     <string name="make_fan">Сделать ФАН</string>
+    <string name="ready">Готово</string>
+    <string name="funs">Фаны</string>
 
     <string name="tutorial_step_one">--- Шаг 1 ---</string>
     <string name="tutorial_step_two">--- Шаг 2 ---</string>

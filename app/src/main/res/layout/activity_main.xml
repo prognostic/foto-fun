@@ -72,6 +72,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:background="#0BBDB0"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="goAndCreateAFan" />
 
 </RelativeLayout>
