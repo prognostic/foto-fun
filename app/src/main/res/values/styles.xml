@@ -15,6 +15,9 @@
         <item name="actionBarTabTextStyle">@style/FunMeActionBarTabText</item>
         <item name="actionMenuTextColor">@color/actionbar_text</item>
 
+        <!-- set the height of Action Bar . -->
+        <item name="actionBarSize">32dip</item>
+
     </style>
 
     <!-- ActionBar styles -->
