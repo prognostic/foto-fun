@@ -41,7 +41,6 @@ public class CreatingFunActivity extends AppCompatActivity {
         handler = new Handler();
     }
 
-
     private Camera getCamera() {
 
         int cameraId = -1;
