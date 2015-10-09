@@ -17,6 +17,7 @@
 
         <!-- set the height of Action Bar . -->
         <item name="actionBarSize">32dip</item>
+        <item name="icon">@drawable/top_bar_logo</item>
 
     </style>
 
