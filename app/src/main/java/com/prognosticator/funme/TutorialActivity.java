@@ -1,9 +1,11 @@
 package com.prognosticator.funme;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -19,6 +21,12 @@ public class TutorialActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+    }
+
+    /** Called when the user clicks the Fun button */
+    public void goAndCreateAFan(View view) {
+        Intent intent = new Intent(this, CreatingFunActivity.class);
+        startActivity(intent);
     }
 
     @Override
