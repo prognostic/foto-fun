@@ -83,7 +83,7 @@ public class CreatingFunActivity extends AppCompatActivity {
                 FileOutputStream outStream = null;
 
                 try {
-                    outStream = new FileOutputStream(Environment.getExternalStorageDirectory() + "/" + System.currentTimeMillis() + ".jpg");
+                    outStream = new FileOutputStream(Environment.getExternalStorageDirectory() + "/Pictures/" + System.currentTimeMillis() + ".jpg");
                     outStream.write(data);
                     outStream.close();
 
