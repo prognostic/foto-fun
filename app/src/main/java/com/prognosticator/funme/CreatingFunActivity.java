@@ -1,6 +1,7 @@
 package com.prognosticator.funme;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
@@ -23,6 +25,7 @@ import java.io.IOException;
 
 public class CreatingFunActivity extends AppCompatActivity {
 
+    final String LOG_TAG = "CreatringFunActivity";
     private Camera cameraObject;
     private CameraView cameraView;
     private ImageView pic;
@@ -119,6 +122,9 @@ public class CreatingFunActivity extends AppCompatActivity {
 
     public void takePhoto(View view) {
         cameraObject.takePicture(null, null, PCallback);
+        Log.d(LOG_TAG, "Here, a link to the photo");
+        Intent intent = new Intent(this, TheResultingFanActivity.class);
+        startActivity(intent);
     }
 
     protected void onResume() {

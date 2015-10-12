@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // FIXME
 //            Intent intent = new Intent(this, CreatingFunActivity.class);
 //            startActivity(intent);
-//            Log.d(LOG_TAG, "перешли на создание фана");
+//            Log.d(LOG_TAG, "moved to create the fun");
 //            finish();
         }
         setContentView(R.layout.activity_main);

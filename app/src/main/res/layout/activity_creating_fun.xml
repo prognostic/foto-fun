@@ -30,11 +30,11 @@
         android:text="@string/funs"
         android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2" />
+        android:layout_toLeftOf="@+id/ready"
+        android:layout_toStartOf="@+id/ready" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/ready"
         android:layout_width="160dp"
         android:layout_height="32dp"
         android:background="#0BBDB0"
