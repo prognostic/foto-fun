@@ -19,7 +19,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -27,7 +26,6 @@ public class CreatingFunActivity extends AppCompatActivity {
 
     final String LOG_TAG = "CreatringFunActivity";
     private Camera cameraObject;
-    private CameraView cameraView;
     private ImageView pic;
     private Handler handler;
     FrameLayout preview;
@@ -67,7 +65,6 @@ public class CreatingFunActivity extends AppCompatActivity {
 
     }
 
-
     // Callback interface used to supply image data from a photo capture.
     private Camera.PictureCallback PCallback = new Camera.PictureCallback() {
 
@@ -83,15 +80,14 @@ public class CreatingFunActivity extends AppCompatActivity {
                 pic.setImageBitmap(bitmap);
 
                 // Save to file
-                FileOutputStream outStream = null;
+                FileOutputStream outStream;
 
+                // FIXME stop creating screenshots
                 try {
                     outStream = new FileOutputStream(Environment.getExternalStorageDirectory() + "/Pictures/" + System.currentTimeMillis() + ".jpg");
                     outStream.write(data);
                     outStream.close();
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -114,7 +110,7 @@ public class CreatingFunActivity extends AppCompatActivity {
     public void initCamera() {
 
         cameraObject = getCamera();
-        cameraView = new CameraView(this, cameraObject);
+        CameraView cameraView = new CameraView(this, cameraObject);
         preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(cameraView);
 
